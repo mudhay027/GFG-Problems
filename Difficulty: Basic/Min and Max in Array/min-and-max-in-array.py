@@ -8,8 +8,7 @@
 
 class Solution:
     def get_min_max(self, arr):
-        min = arr[0]
-        max = 0
+        min,max = arr[0],arr[0]
         for num in arr:
             if num<min:
                 min = num
