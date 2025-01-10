@@ -1,11 +1,8 @@
 class Solution:
     def reverseArray(self, arr):
-        first = 0
-        last = len(arr)-1
-        while first<last:
-            arr[first], arr[last] = arr[last],arr[first]
-            first+=1
-            last-=1
+        nn = len(arr)
+        for i in range(nn//2):
+            arr[i],arr[nn-i-1] = arr[nn-i-1],arr[i]
         return arr
         
         
