@@ -11,7 +11,6 @@ class Solution:
                 if temp - arr[u] in seen:
                     return True
                 seen.add(arr[u])
-                
         return False
 
 
