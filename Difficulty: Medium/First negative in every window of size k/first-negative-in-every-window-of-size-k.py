@@ -14,7 +14,7 @@ class Solution:
                 ans.append(arr[dq[0]])
             else:
                 ans.append(0)
-            while dq and dq[0] <= i-k:
+            if dq and dq[0] == i-k:
                 dq.popleft()
             if arr[i]<0:
                 dq.append(i)
